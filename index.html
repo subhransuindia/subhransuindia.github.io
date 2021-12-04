@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Lobster|Montserrat|Permanent+Marker">
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/90274551?v=4" type="image/gif" sizes="17x17">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Inform Our World</title>
+<style>
+body {
+margin: 0;
+line-height: 1.8;
+overflow-x: hidden;color: rgb(5, 12, 40);font-weight: 600;transition: 1s;
+}
+
+.h {
+  background: url(https://images.pexels.com/photos/1005324/literature-book-open-pages-1005324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+ background-size: cover;
+ background-attachment: fixed;
+width: 100%;
+height:35em;
+border-left: 10px solid rgb(255,191,255);
+}
+
+h1, h2, h3 {
+font-family: Montserrat;
+}
+
+.w {
+  font-size: 24px;color: black;
+}
+.w:hover {
+  margin-left: 10px;
+}
+
+hr {
+border: none;
+}
+
+p, a {
+font-family: Poppins;
+}
+
+.h1 {
+ color: snow;
+ padding-top: 250px;
+margin-left: 15%;
+ font-size: 48px;
+ transition: 1s;
+}
+
+.p1 {
+margin-left: 20%;
+width: 60%;
+transition: 1s;
+}
+img {
+width: 100%;
+border-radius: 10px;
+}
+
+.a {
+display: flex;
+flex-direction: row;
+padding: 10px;
+
+}
+.b{
+flex: 50%;
+padding: 10px;
+margin: 5px;
+transition: 1s;
+}
+
+.c{
+flex: 50%;
+padding: 10px;
+}
+
+.im1 {
+width: 50%;object-fit: cover;height: 200px;border-radius: 10px;
+transition: 1s;
+}
+
+.im1:hover {
+transform: scale(1.05);
+transition: 1s;
+}
+
+.im2 {
+  width: 100%;object-fit: cover;height: 200px;border-radius: 10px;
+transition: 1s;}
+
+.b:hover {
+transform: scale(1.05);
+transition: 1s;
+}
+a {
+  
+  color: orange;
+  transition: 1s;
+}
+
+a:hover {
+  color: rgb(15, 22, 50);
+  text-decoration: none;
+  transition: 1s;
+}
+
+iframe {width: 100%;margin: 10px;border-radius: 10px;height: 600px;}
+
+@media (max-width: 600px) {
+.p1{
+margin-left: 5%;
+width: 90%;
+}
+.a {
+flex-direction: column;
+}
+.im1 {
+width: 95%;
+}
+}
+ 
+a {cursor: pointer;}
+
+#opentab {
+  left: -100%;position: fixed;width: 100%;background-color: blueviolet;height: 50%;transition: 1s;top: 0;
+}
+
+#openta {
+  position: fixed;width: 100%;background-color: cornsilk;height: 50%;transition: 1s;bottom: -100%;text-align: center;
+}
+
+@media (max-width: 300px) {.h1 {
+ color: snow;
+ padding-top: 240px;
+margin-left: 15%;
+ font-size: 40px;
+}}
+summary {
+  cursor: pointer;
+}
+details > summary {
+  list-style: none;
+}
+li {list-style: none;}
+button > a{color: black;}
+button{background: transparent;border: 0;}
+</style>
+</head>
+<body>
+
+  <div style="width: 100%;position:fixed;top:0;background-color:aquamarine;padding: 16px;color: gainsboro;">
+    <a onclick="openbtn()" style="cursor: pointer;color: black;">☰ Inform Our World </a>
+    <a href="https://informourworld.w3spaces.com/" style="position: fixed;right:30px;top:15px;color: black;">Old Version</a>
+  </div>
+
+  <div id="openta" >
+    <h1>Inform Our World</h1>
+      </div>
+
+  <div id="opentab" >
+    <div style="margin-left: 20%;">
+    <a class="w" href="https://subhransuindia.github.io/homepage.github.io/" ><p>Home</p></a>
+    <a class="w" href="https://subhransuindia.wordpress.com"><p>Blog</p></a>
+    <a class="w" href="https://subhransuindia.github.io/more.github.io/"><p>More</p></a>
+    
+    <a class="w" href="https://github.com/subhransuindia"><p>Github</p></a>
+
+    <a onclick="closebtn()" style="cursor:pointer;position: absolute;right:5%;top: 10px;background-color: rgb(255, 126, 152);padding: 10px;border-radius: 20px;box-shadow: 2px 2px 10px black;color: black;">X</a>
+  </div>
+  </div>
+
+<div class="h">
+  <h1 class="h1">Inform Our World</h1>
+  <hr style="margin-left: 15%;width: 20%;height: 10px; border-radius: 10px;background-color: #ffffbf">
+</div>
+
+<div style="text-align: center;">
+<h1>Welcome to my Website</h1><a onclick="darkmode()" class="material-icons" style="font-size: 24px;">dark_mode</a><a onclick="lightmode()" class="material-icons" style="font-size: 24px;margin-left: 10px;">light_mode</a>
+ <hr style="width: 20%;height: 5px; border-radius: 10px;background-color: rgb(121,255,255);">
+ <p class="p1">Here, I express my expressions and feelings through words. I write what came in my mind. Earlier post were 'vlog type'. But now I have started a short story. Hope you will like it. Chapter 1 will be released on December 7 2021. This website is made with HTML, CSS and JS (JavaScript).</p>
+</div>
+
+<div style="text-align: center;">
+<h1>Some of My Articles</h1>
+ <hr style="width: 20%;height: 5px; border-radius: 10px;background-color: rgb(121,255,255);">
+ <div style="border-radius: 10px; margin: 10px;">
+ <h2><a href="https://subhransuindia.github.io/Trip-To-Pakur/">Trip To Pakur</a></h2>
+ <div class="a">
+ <img  class="b im1" style="border-radius: 10px;" src="https://subhransuindia.github.io/Trip-To-Pakur/3.jpeg">
+ <p class="c" class="p1">Get to know about a town which is a good spot of tourism. Click on "Trip To Pakur" to visit the site
+</p></div>
+ </div>
+ 
+ <div style="text-align: center;">
+ <hr style="width: 20%;height: 5px; border-radius: 10px;background-color: rgb(121,255,255);">
+ <div style="border-radius: 10px; margin: 10px;">
+  <h2><a href="https://subhransuindia.github.io/Durga-Puja-Experience-in-2021/">Durga Puja Experience : 2021
+</a></h2>
+ <div class="a">
+ <p class="c" class="p1">Welcome to Kolkata in the month of October. Enjoy with your family and friends in this festive season virtualy by reading the article. Click on 'Durga Puja Experience in 2021' to know more</p>
+ <img  class="b im1" style="border-radius: 10px;" src="https://github.com/subhransuindia/Durga-Puja-Experience-in-2021/blob/main/Nobomi.jpg?raw=true">
+</div> 
+</div>
+  </div>
+  
+  <h3>AND MANY MORE...</h3>
+  
+  <h1>Albums</h1>
+  <hr style="width: 20%;height: 5px; border-radius: 10px;background-color: rgb(121,255,255);">
+  <div class="a">
+  <div class="b d" style="background-color: aqua;border-radius: 10px;">
+  <img class="im2" src="https://images.pexels.com/photos/2952871/pexels-photo-2952871.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260">
+  <details>
+ <summary><h2>Historical Articles</h2></summary> 
+ <li><button><a href="https://subhransuindia.github.io/colonialrule.github.io/">Colonial Rule</a></button></li>
+ <li><button><a href="https://subhransuindia.github.io/ashoka.github.io/">Ashoka</a></button></li>
+   <li><button><a href="https://subhransuindia.github.io/maratha-empire.github.io/">Maratha Empire</a></button></li>
+</details>
+  </div>
+  
+  <div class="b d" style="background-color: rgb(255, 255, 1);border-radius: 10px;">
+  <img class="im2" src="https://github.com/subhransuindia/Durga-Puja-Experience-in-2021/blob/main/Shoshthi.jpg?raw=true">
+  <details>
+    <summary><h2>Vlogs</h2></summary> 
+    <li><button><a href="https://subhransuindia.github.io/Trip-To-Pakur/">Trip to Pakur</a></button></li>
+    <li><button><a href="https://subhransuindia.github.io/Durga-Puja-Experience-in-2021/">Durga Puja Experience : 2021
+  </a></button></li>
+  <li><button><a href="https://subhransuindia.github.io/Festival-of-Lights-Diwali-2021/">Festival of Lights, Diwali!! 2021</a></button></li>
+  <li><button><a href="https://subhransuindia.github.io/Horrible-Incident-in-our-Locality/">Horrible Incident in our Locality</a></button></li>
+   </details>
+  </div>
+  
+   <div class="b d" style="background-color: rgb(255, 1, 243);border-radius: 10px;">
+  <img class="im2" src="https://github.com/subhransuindia/Pictures/blob/main/web.w.jpg?raw=true">
+  <details>
+    <summary><h2>Poems</h2></summary> 
+    <li><button><a href="https://subhransuindia.github.io/Summer-Night-Walk/">Summer Night Walk</a></button></li>
+   </details>
+  </div>
+  
+  <div class="b d" style="background-color: rgb(0, 110, 255);border-radius: 10px;">
+  <img class="im2" src="https://github.com/subhransuindia/Durga-Puja-Experience-in-2021/blob/main/Shoshthi.jpg?raw=true">
+  <details>
+    <summary><h2>Helpful Articles</h2></summary> 
+    <li><button><a href="https://subhransuindia.github.io/Video-Games-A-Helpful-Devil/">Video Games: A Helpful Devil</a></button></li>
+    <li><button><a href="https://subhransuindia.github.io/How-to-Build-a-Website/">How to do Coding (How to Build a Website)!!</a></button></li>
+    <li><button><a href="https://subhransuindia.github.io/From-Boring-to-Unique-Sarcastic/">From Boring to Unique (Sarcastic)</a></button></li>
+   </details>
+  </div>
+  
+   <div class="b d" style="background-color: rgb(255, 0, 85);border-radius: 10px;">
+  <img class="im2" src="https://images.pexels.com/photos/4439444/pexels-photo-4439444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+  <details>
+    <summary><h2>Short Stories</h2></summary> 
+   <p>Coming Soon</p>
+   </details>
+  </div>
+  
+</div>
+
+<div style="text-align: center;background-color: rosybrown;margin: 10px;border-radius: 10px;border: 2px solid black;" class="a">
+<div class="b" >
+  <img style="width: 20%;border-radius: 50%;" src="https://lh3.googleusercontent.com/a-/AOh14GiAELd0dbwboWObqEvYgy8guTS7yJeRpxw9hNdO=s288-p-rw-no">
+  <h2>The Maker</h2>
+  <p>Website By Subhransu Patra</p>
+ </div>
+ <div class="b">
+  <p>I am Subhransu Patra, living in Kolkata, India. I am a front-end developer and know HTML, CSS and learning JS. I am a 13 year old student who is a amateur coder. Hope you liked my articles. </p>
+ </div>
+</div>
+
+<div class="a">
+  <div class="b">
+    <iframe src="https://subhransuindia.wordpress.com/"></iframe>
+    <p>Wordpress Blog</p>
+</div>
+<div class="b">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9hO-OQwpi2BEeHo1S2y7VoM7hUnYs12egqA4290T-M5Fcig/viewform?usp=sf_link"></iframe>
+  <p>Give your Review Here. Forms by Google.</p>
+</div>
+</div>
+
+<h1>THANKS FOR VISITING</h1>
+<hr style="width: 20%;height: 5px; border-radius: 10px;background-color: rgb(255,121,255);">
+
+<script>
+  function openbtn() {
+  var x = document.getElementById("opentab");
+  x.style.left = "0";
+  var y = document.getElementById("openta");
+  y.style.bottom = "0";
+}
+
+function closebtn() {
+  var x = document.getElementById("opentab");
+  x.style.left = "-100%";
+  var y = document.getElementById("openta");
+  y.style.bottom = "-100%";
+}
+
+function closebtn() {
+  var x = document.getElementById("opentab");
+  x.style.left = "-100%";
+  var y = document.getElementById("openta");
+  y.style.bottom = "-100%";
+}
+
+function darkmode() {
+  var x = document.body;
+  x.style.background = "black";
+  x.style.color = "white";
+  let y = document.getElementsById("openta");
+  y.style.background = "black";
+}
+
+function lightmode() {
+  var x = document.body;
+  x.style.background = "white";
+  x.style.color = "black";
+  let y = document.getElementsById("openta");
+  y.style.background = "cornsilk";
+}
+</script>
+
+</body>
+</html>
+
+
