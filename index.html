@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -182,7 +183,8 @@ button{background: transparent;border: 0;}
 </div>
 
 <div style="text-align: center;">
-<h1>Welcome to my Website</h1><a onclick="darkmode()" class="material-icons" style="font-size: 24px;">dark_mode</a><a onclick="lightmode()" class="material-icons" style="font-size: 24px;margin-left: 10px;">light_mode</a>
+<h1>Welcome to my Website</h1><a onclick="darkmode()" class="material-icons" style="font-size: 24px;">dark_mode</a><a onclick="lightmode()" class="material-icons" style="font-size: 24px;margin-left: 10px;">light_mode</a><a id="shareBtn" class="material-icons" style="font-size: 24px;margin-left: 10px;">share</a>
+
 
  <hr style="width: 20%;height: 5px; border-radius: 10px;background-color: rgb(121,255,255);">
  <p class="p1">Here, I express my expressions and feelings through words. I write what came in my mind. Earlier post were 'vlog type'. But now I have started a short story. Hope you will like it. Chapter 1 will be released on December 7 2021. This website is made with HTML, CSS and JS (JavaScript).</p>
@@ -330,6 +332,25 @@ function lightmode() {
     
 }
 </script>
+	<script>
+		document.querySelector('#shareBtn')
+		.addEventListener('click', event => {
+			if (navigator.share) {
+				navigator.share({
+					title: 'Inform Our World',
+					url: 'https://subhransuindia.github.io/'
+				}).then(() => {
+					console.log('Thanks for sharing!');
+				}).catch(err => {
+					console.log(
+					"Error while using Web share API:");
+					console.log(err);
+				});
+			} else {
+				alert("Browser doesn't support this API !");
+			}
+		})
+	</script>
 
 </body>
 </html>
