@@ -183,8 +183,6 @@ button{background: transparent;border: 0;}
 
 <div style="text-align: center;">
 <h1>Welcome to my Website</h1><a onclick="darkmode()" class="material-icons" style="font-size: 24px;">dark_mode</a><a onclick="lightmode()" class="material-icons" style="font-size: 24px;margin-left: 10px;">light_mode</a>
-    <p><button>Share</button></p>
-<p class="result"></p>
 
  <hr style="width: 20%;height: 5px; border-radius: 10px;background-color: rgb(121,255,255);">
  <p class="p1">Here, I express my expressions and feelings through words. I write what came in my mind. Earlier post were 'vlog type'. But now I have started a short story. Hope you will like it. Chapter 1 will be released on December 7 2021. This website is made with HTML, CSS and JS (JavaScript).</p>
@@ -330,25 +328,6 @@ function lightmode() {
   let y = document.getElementsById("openta");
   y.style.background = "cornsilk";
     
-    const shareData = {
-    title: 'Inform Our World',
-    text: 'Share Inform Our World',
-    url: 'https://subhransuindia.github.io/'
-  }
-
-  const btn = document.querySelector('button');
-  const resultPara = document.querySelector('.result');
-
-  // Share must be triggered by "user activation"
-  btn.addEventListener('click', async () => {
-    try {
-      await navigator.share(shareData)
-      resultPara.textContent = 'MDN shared successfully'
-    } catch(err) {
-      resultPara.textContent = 'Error: ' + err
-    }
-  });
-
 }
 </script>
 
